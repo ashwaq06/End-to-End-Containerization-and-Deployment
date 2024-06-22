@@ -31,10 +31,6 @@ spec:
         requests:
           storage: 1Gi
       storageClassName: standard
-      selector:
-        matchLabels:
-          type: local
-
 ---
 apiVersion: apps/v1
 kind: StatefulSet
