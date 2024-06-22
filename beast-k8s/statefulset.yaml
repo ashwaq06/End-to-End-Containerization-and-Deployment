@@ -22,10 +22,15 @@ spec:
         volumeMounts:
         - name: mongo-storage
           mountPath: /data/db
-        volumes:
-          - name: mongo-storage
-            persistentVolumeClaim:
-              claimName: database-persistent-volume-claim
+  volumeClaimTemplates:
+  - metadata:
+      name: mongo-storage
+    spec:
+      accessModes: ["ReadWriteOnce"]
+      resources:
+        requests:
+          storage: 1Gi
+      storageClassName: standard
 ---
 apiVersion: apps/v1
 kind: StatefulSet
