@@ -17,7 +17,7 @@ metadata:
   name: node-app
   namespace: testing
 spec:
-  type: loadbalancer
+  type: LoadBalancer
   ports:
   - port: 5000
     targetPort: 5000
