@@ -1,3 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongodb
+  namespace: testing
+spec:
+  ports:
+  - port: 27017
+    targetPort: 27017
+  clusterIP: None
+  selector:
+    app: mongodb
+---
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
@@ -31,6 +44,19 @@ spec:
         requests:
           storage: 1Gi
       storageClassName: standard
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-app
+  namespace: testing
+spec:
+  type: NodePort
+  ports:
+  - port: 5000
+    targetPort: 5000
+  selector:
+    app: node-app
 ---
 apiVersion: apps/v1
 kind: StatefulSet
