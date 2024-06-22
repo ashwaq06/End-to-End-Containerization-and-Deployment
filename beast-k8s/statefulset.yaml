@@ -85,5 +85,5 @@ spec:
         - name: MONGODB_URI
           value: "mongodb://mongodb:27017/sample-db"
       imagePullSecrets:
-      - name: ecr-registry
+      - name: ecr-secret
 
