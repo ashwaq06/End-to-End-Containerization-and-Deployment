@@ -308,7 +308,3 @@ pipeline {
 
 
 
----
-
-This documentation provides a detailed walkthrough of setting up a CI/CD pipeline for a Node.js application using Jenkins, Docker, and Kubernetes. It includes steps for containerization, cluster setup, deployment manifests, and Jenkins pipeline configuration.
-
