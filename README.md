@@ -63,10 +63,11 @@ sudo apt-mark hold kubelet kubeadm kubectl
 ```
 
 Joined the worker node to the master using the token generated from master node using the below command
-## 4. Kubernetes Manifests
 ```
 kubeadm token create --print-join-command
 ```
+## 4. Kubernetes Manifests
+
 ### MongoDB StatefulSet and Service
 
 ```yaml
