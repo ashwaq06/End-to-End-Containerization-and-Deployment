@@ -76,7 +76,7 @@ spec:
     spec:
       containers:
       - name: node-app
-        image: 107534347551.dkr.ecr.ap-south-1.amazonaws.com/node-app:v1.${BUILD_ID}
+        image: 107534347551.dkr.ecr.ap-south-1.amazonaws.com/node-app:latest
         ports:
         - containerPort: 5000
         env:
