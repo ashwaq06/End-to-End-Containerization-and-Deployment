@@ -5,6 +5,7 @@
 ## Overview
 
 This document outlines the steps taken to containerize a Node.js application and deploy it using Kubernetes. The process includes setting up a CI/CD pipeline with Jenkins, configuring AWS ECR for image storage, and deploying the application with Kubernetes StatefulSets, Services, and Ingress.
+![image](https://github.com/user-attachments/assets/576d3c3b-e638-494e-aac6-1a73f151e85a)
 
 ## 1. Cloning the Repository
 
